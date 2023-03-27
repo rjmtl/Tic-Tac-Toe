@@ -69,6 +69,7 @@ function WordTicTacToe() {
 
     return (
         <>
+        <h4>Tic-Tac-Toe</h4>
             <div className='game-info'>
                 Player 1: <input type="text" value={player1} readOnly={isGameStarted} onChange={(e) => setPlayer1(e.target.value)} /> <br />
             </div>
