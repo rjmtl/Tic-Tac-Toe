@@ -1,11 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
-import SearchField from './Search';
+import GameBoard from './Game';
 
 function App() {
   return (
     <div className="App">
-     <SearchField/>
+    <GameBoard/>
     </div>
   );
 }

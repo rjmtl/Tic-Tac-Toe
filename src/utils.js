@@ -1,18 +1,8 @@
-export const AUTH_TOKEN = "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";
 
-export const SORT_ORDER_OPTIONS = [
-    { label: "Descending", value: "desc" },
-    { label: "Ascending", value: "asc" },
-]
-
-export const SORT_BY_OPTIONS = [
-    { label: "Relevance", value: "text-match" },
-    { label: "Stars", value: "stars" },
-    { label: "Forks", value: "forks" },
-    { label: "Help Wanted Issues", value: "help-wanted-issues" },
-    { label: "Recently Updated", value: "updated" },
-]
-
-export function truncate(str, n=25){
-    return (str?.length > n) ? str.slice(0, n-1) + '...' : str;
-  };
+export const dummyArray = [
+    'ace', 'bee', 'cab', 'dad', 'eel', 'fee', 'gym', 'hay', 'ice', 'jib', 'kin', 'lap', 'mad', 'nab', 'odd', 'pee',
+    'qua', 'red', 'see', 'tee', 'use', 'van', 'wag', 'xylophone', 'yes', 'zip', 'ago', 'bed', 'cow', 'dig', 'ebb',
+    'fly', 'gig', 'hit', 'ivy', 'jam', 'kit', 'log', 'mop', 'not', 'owl', 'pop', 'quo', 'rat', 'sip', 'tap', 'urn',
+    'vex', 'wry', 'yap', 'zig'
+  ];
+  

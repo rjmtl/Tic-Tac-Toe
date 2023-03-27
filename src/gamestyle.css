@@ -1,0 +1,81 @@
+.game-board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border: 2px solid #333;
+    background-color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+  }
+  
+  .game-board::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #fff;
+  }
+  
+  .game-board .square {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .game-board .square:focus {
+    outline: none;
+  }
+  
+  .game-board .square:hover:not(.disabled) {
+    background-color: #eee;
+  }
+  
+  .game-board .square.disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  
+  .game-board .square.winning {
+    background-color: #d4edda;
+  }
+  
+  .game-board .square.winning span {
+    background-color: #155724;
+    color: #fff;
+    padding: 3px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+.square.winner {
+    border: 4px solid lightgreen;
+}
+
+.game-info {
+  margin: 10px auto;
+}
+
+.player1 {
+color: blue;
+}
+
+.player2 {
+  color: red;
+}
